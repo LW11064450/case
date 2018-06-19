@@ -1,0 +1,36 @@
+@media (-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5)
+  .border-1px
+    &::after
+      -webkit-transform: scaleY(0.7)
+      transform: scaleY(0.7)
+
+@media (-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2)
+  .border-1px
+    &::after
+      -webkit-transform: scaleY(0.5)
+      transform: scaleY(0.5)
+
+
+.clearfix::after
+  content: ""
+  display: table
+  clear: both;
+
+
+
+.icon
+  display: inline-block
+  background-repeat: no-repeat
+  vertical-align: middle
+  &.decrease
+    bg-image('decrease_1')
+  &.discount
+    bg-image('discount_1')
+  &.guarantee
+    bg-image('guarantee_1')
+  &.invoice
+    bg-image('invoice_1')
+  &.special
+    bg-image('special_1')
+  &.bulletin
+    bg-image('bulletin')
